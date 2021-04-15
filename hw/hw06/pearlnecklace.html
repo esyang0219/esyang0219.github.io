@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding:0;
+            margin:0;
+        }
+        #head {
+            background-color: #f6f5ef;
+        }
+        #logo {
+          float:left;
+          margin:0 0 0 20px;
+          text-align: center;
+        }
+        #top {
+            float:right;
+            margin:60px 70px 0 0;
+        }
+        #menu {
+            clear: both;
+            height: 35px;
+            background-color:mistyrose;
+            color: white;
+            text-align: center;
+            padding-top: 5px;
+            font-size: 15px;
+        }
+        .item {
+            margin:50px 80px 50px 80px;
+            text-align: center;
+        }
+        .information1 {
+            color:gray; 
+            padding:20px 20px 5px 20px;
+            margin:0 20px 5px 20px;
+            font-size: 30px;
+            font-family: 'Song Myung', serif;
+        }
+        body {
+            font-family: 'Song Myung', serif;
+        }
+        @media(max-width:500px) {
+            #layout {
+                display:grid;
+                grid-template-columns: auto;
+            }
+        }
+        .br {
+            border-style: dashed;
+            border-color:mediumpurple;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        #img{
+            margin:10px;
+            padding:10px;
+            float:left;
+            width:400px;
+            height:550px;
+        }
+        .button{
+            margin-top:15px;
+        }
+        #price1{
+            color:red;
+        }
+        .price{
+            padding:20px 30px 20px 30px;
+            margin:20px 30px 20px 30px;
+        }
+        #select{
+            padding:25px 30px 5px 20px;
+            margin:0 30px 15px 30px;
+        }
+       
+        #cloth {
+            padding-right:800px
+        }
+        #cloth li{
+            list-style-type:none;
+        }
+    </style>
+    <title>은서네 옷가게</title>
+</head>
+<body>
+    <div id="head">
+        <div id="logo">
+            <h1 class="br"><a href="./hw06.html">EunSeo's Closet</a></h1>
+        </div>
+        <div id="top">
+            <a href="./login.html">LOGIN</a> | <a href="./join.html">JOIN</a> | <a href="./cart.html">CART</a>
+        </div>
+    </div>
+        <div id="menu">
+                <a href="./top.html">top</a> | <a href="./pants.html">pants</a> | <a href="./skirt.html">skirt</a>
+                 | <a href="./outer.html">outer</a> | <a href="./bag.html">bag</a> | <a href="./shoes.html">shoes</a> | 
+                <a href="./acc.html">acc</a>
+        </div>
+    <div id="cloth">
+        <ul>
+            <img src="./img/pearlnecklace.JPG" id="img">
+            <li class="information1">Pearl Necklace</li>
+            <li id="select">
+                <form>
+                    <label>COLOR:
+                        <select name="color">
+                            <option>WHITE</option>
+                        </select>
+                    </label>
+                    <br>
+                    <label>TOTAL: 
+                        <select name="size">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </label>
+                </form>
+            </li>
+            <li class="price">PRICE: <p id="price1">17,000won</p></li>
+            <li class="button">
+                <form>
+                    <button type="submit">ADD TO CART</button>
+                    <button type="submit">BUY IT NOW</button>
+                </form>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
